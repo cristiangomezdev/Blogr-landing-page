@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --prymary-light-red:hsl(356, 100%, 66%);
+    --prymary-very-light-red:hsl(355, 100%, 74%);
+    --prymary-very-dark-blue:hsl(208, 49%, 24%);
+    --neutral-white:hsl(0, 0%, 100%);
+    --neutral-grayish-blue:hsl(240, 2%, 79%);
+    --neutral-very-dark-grayish-blue:hsl(207, 13%, 34%);
+    --neutral-very-dark-black-blue:hsl(240, 10%, 16%);
+    --bgradient-nav-very-light-red: hsl(13, 100%, 72%);
+    --bgradient-nav-light-red: hsl(353, 100%, 62%);
+    --bgradient-body-very-dark-gray-blue: hsl(237, 17%, 21%);
+    --bgradient-body-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+/*Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-size: 16px; /*propuesto en el challenge*/ 
+}
+ol, ul {
+    list-style: none;
+}
+/*fin reset*/ 
+
+/* 
+.footer__div__attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.footer__div__attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+*/
