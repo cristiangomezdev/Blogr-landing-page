@@ -1,0 +1,262 @@
+@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
+header {
+    width: 100%;
+    height: 600px;
+    background: var(--gradient-1);
+    border-radius: 0 0 0 100px;
+}
+
+nav {
+    padding-top: 66px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+li {
+    color: var(--neutral-very-dark-grayish-blue)
+}
+
+.header__svg {
+    height: 600px;
+    background-image: url(../assets/images/bg-pattern-intro-desktop.svg);
+    background-size: 200%;
+    background-position-y: center;
+    background-position-x: 25%;
+}
+
+.nav__logo {
+    font-size: 35px;
+    font-family: 'Overpass';
+    font-weight: 700;
+    align-items: center;
+    color: white;
+}
+
+.nav__mainbar {
+    font-family: 'Overpass';
+    font-weight: 700;
+    padding: 23px;
+    width: 85%;
+    top: 130px;
+    right: 8%;
+    border-radius: 5px;
+    position: absolute;
+    background: var( --neutral-white);
+    -webkit-box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.23);
+    box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.23);
+}
+
+.nav__opt {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-position: bottom;
+    background: url('../assets/images/icon-arrow-dark.svg')no-repeat;
+}
+
+.nav__mainbar li {
+    display: block;
+    text-align: center;
+    padding: 18px;
+    font-size: 18px;
+}
+
+.nav__burguer {
+    position: absolute;
+    top: 60px;
+    right: 3%;
+}
+
+.nav__burguer div {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: white;
+}
+
+.nav__log {
+    text-decoration: none;
+    padding: 25px 20px 0px 0px;
+    border-top: 1px solid var(--neutral-grayish-blue);
+}
+
+.nav__log a {
+    text-decoration: none;
+}
+
+.nav__log a li:first-child {
+    margin-bottom: 10px;
+}
+
+.nav__card {
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: rgb(238, 238, 238);
+    color: var(--neutral-very-dark-grayish-blue);
+}
+
+.nav__card li {
+    padding: 14px;
+}
+
+.button {
+    margin: 0 auto;
+    width: 110px;
+    background-color: white;
+    border-radius: 30px;
+    font-family: 'Overpass';
+    font-weight: 700;
+    padding: 12px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    color: var( --bgradient-body-very-dark-gray-blue);
+}
+
+.button-inverted {
+    width: 150px;
+    border-radius: 30px;
+    color: white;
+    padding: 16px 1px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 12px;
+    background: linear-gradient(124deg, rgba(255, 143, 112, 1) 60%, rgba(255, 61, 83, 1) 100%);
+}
+
+.hero__container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero__letter {
+    margin: 45px;
+}
+
+.hero__letter h1,
+.hero__letter p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.hero__letter h1 {
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.hero__letter p {
+    font-family: 'Overpass';
+    font-weight: 500;
+}
+
+.hero__log {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero__button-inverted {
+    margin: 0 auto;
+    width: auto;
+    color: var( --bgradient-nav-light-red);
+    background-color: white;
+    border-radius: 30px;
+    /* Green */
+    font-family: 'Overpass';
+    font-weight: 700;
+    padding: 12px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.hero__button {
+    margin: 0 auto;
+    width: 110px;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    /* Green */
+    font-family: 'Overpass';
+    font-weight: 700;
+    color: white;
+    padding: 12px 14px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    header,
+    .header__svg {
+        height: 400px;
+    }
+    nav {
+        display: flex;
+    }
+    .nav__card {
+        display: none;
+    }
+    .nav__mainbar {
+        background: none;
+        position: unset;
+        top: 60px;
+        padding: 0px;
+    }
+    .nav__burguer {
+        display: none;
+    }
+    .nav__mainbar li {
+        float: left;
+        display: block;
+        width: auto;
+        font-size: 14px;
+        padding: 17px;
+        color: #FFF;
+    }
+    .nav__log {
+        float: right;
+        padding-top: 5px;
+        border: 0px;
+    }
+    .nav__mainnav {
+        padding-left: 30px;
+        color: white;
+    }
+    .button-inverted {
+        margin-left: 10px;
+    }
+    .nav__opt {
+        background: url('../assets/images/icon-arrow-light.svg') no-repeat;
+        background-position: bottom;
+    }
+    .button {
+        background: unset;
+        color: white;
+        font-size: 14px !important;
+        width: auto !important;
+    }
+    .button-inverted {
+        width: 100px !important;
+        background: white;
+        color: var( --bgradient-nav-light-red) !important;
+        font-size: 14px !important;
+        padding: 12px 14px !important;
+    }
+    .hero__container {
+        width: 90%;
+    }
+    .hero__letter {
+        margin: 45px;
+    }
+}

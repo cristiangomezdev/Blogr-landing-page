@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
-
+@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
 :root{
     --prymary-light-red:hsl(356, 100%, 66%);
     --prymary-very-light-red:hsl(355, 100%, 74%);
@@ -12,6 +12,7 @@
     --bgradient-nav-light-red: hsl(353, 100%, 62%);
     --bgradient-body-very-dark-gray-blue: hsl(237, 17%, 21%);
     --bgradient-body-very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    --gradient-1:linear-gradient(124deg, rgba(255,143,112,1) 60%, rgba(255,61,83,1) 100%);
 }
 
 /*Reset*/
@@ -41,11 +42,16 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
+    margin:0;
     line-height: 1;
     font-size: 16px; /*propuesto en el challenge*/ 
 }
 ol, ul {
     list-style: none;
+}
+*{
+    box-sizing: border-box;
+    outline:3px solid limegreen !important;
 }
 /*fin reset*/ 
 
