@@ -7,7 +7,7 @@ header {
 }
 
 nav {
-    padding-top: 66px;
+    padding-top: 50px;
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -33,15 +33,17 @@ li {
 }
 
 .nav__mainbar {
+    display:none;
     font-family: 'Overpass';
     font-weight: 700;
     padding: 23px;
-    width: 85%;
+    width: 80%;
     top: 130px;
-    right: 8%;
+    left: 50%;
     border-radius: 5px;
     position: absolute;
     background: var( --neutral-white);
+    transform: translate(-50%, 0%);
     -webkit-box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.23);
     box-shadow: 0px 0px 26px 7px rgba(0, 0, 0, 0.23);
@@ -58,13 +60,13 @@ li {
 .nav__mainbar li {
     display: block;
     text-align: center;
-    padding: 18px;
+    padding: 18px 0px 18px 0px;
     font-size: 18px;
 }
 
 .nav__burguer {
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 3%;
 }
 
@@ -72,12 +74,39 @@ li {
     width: 35px;
     height: 5px;
     margin: 6px 0;
+    
     background-color: white;
 }
+.nav__open{
+display:block;
+}
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
 
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
 .nav__log {
     text-decoration: none;
-    padding: 25px 20px 0px 0px;
     border-top: 1px solid var(--neutral-grayish-blue);
 }
 
@@ -90,6 +119,7 @@ li {
 }
 
 .nav__card {
+    display:none;
     margin: 0 auto;
     padding: 10px;
     border-radius: 5px;
@@ -167,7 +197,7 @@ li {
 
 .hero__button-inverted {
     margin: 0 auto;
-    width: auto;
+    width: 100px;
     color: var( --bgradient-nav-light-red);
     background-color: white;
     border-radius: 30px;
@@ -195,7 +225,17 @@ li {
     display: inline-block;
     font-size: 12px;
 }
-
+.nav__mainbar li a{
+    text-decoration: none;
+    color:var(--neutral-very-dark-grayish-blue)
+}
+.active{
+    display:block;
+    margin:20px 0px 0px 0px;
+}
+.nav__active{
+    transform: rotate(180deg);
+}
 @media only screen and (min-width: 768px) {
     header,
     .header__svg {
@@ -204,38 +244,59 @@ li {
     nav {
         display: flex;
     }
+    .active{
+        display:block !important;
+        position:absolute;
+        top:70px;
+    }
     .nav__card {
-        display: none;
+        display:none;
+        /* padding:15px 10px 15px 10px;
+        top:85px; */
+    }
+
+    .nav__card li{
+        text-align: left;
+        float:unset !important;
+        padding:6px !important;
+        color:black !important;
     }
     .nav__mainbar {
+        display:block;
         background: none;
         position: unset;
+        transform:unset;
         top: 60px;
         padding: 0px;
+        box-shadow:none;
     }
     .nav__burguer {
         display: none;
     }
-    .nav__mainbar li {
+    .nav__mainbar li{
         float: left;
         display: block;
         width: auto;
         font-size: 14px;
         padding: 17px;
-        color: #FFF;
+ 
+        text-decoration: none !important;
+    }
+    .nav__mainbar li a{
+        color: #FFF !important;
+        text-decoration: none;
     }
     .nav__log {
         float: right;
-        padding-top: 5px;
+        padding:0px;
         border: 0px;
     }
     .nav__mainnav {
         padding-left: 30px;
         color: white;
     }
-    .button-inverted {
-        margin-left: 10px;
-    }
+
+
     .nav__opt {
         background: url('../assets/images/icon-arrow-light.svg') no-repeat;
         background-position: bottom;
@@ -252,6 +313,20 @@ li {
         color: var( --bgradient-nav-light-red) !important;
         font-size: 14px !important;
         padding: 12px 14px !important;
+        margin-left: 10px;
+    }
+
+    .button-inverted:hover{
+        background:var(--prymary-very-light-red);
+        color:white !important;
+    }
+    .hero__button-inverted:hover{
+        background:var(--prymary-very-light-red);
+        color:white !important;
+    }
+    .hero__button:hover{
+        background:white;
+        color:var(--bgradient-nav-light-red);
     }
     .hero__container {
         width: 90%;

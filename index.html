@@ -19,16 +19,29 @@
         <h1 class="nav__logo">Blogr</h1>
         <ul class="nav__mainbar">
           <div class="nav__mainnav">
-            <li>Product <i class="nav__opt"></i></li>
-            <li>Company <i class="nav__opt"></i></li>
-            <li>Connect <i class="nav__opt"></i></li>
+            <li onclick="active(event,this)" ><a  href="">Product  <i class="nav__opt "></i></a>
+              <ul class="nav__card">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkdln</li>
+              </ul>
+            </li>
+            <li onclick="active(event,this)" ><a href="">Company  <i class="nav__opt"></i></a>
+              <ul class="nav__card">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkdln</li>
+              </ul>
+            </li>
+            <li onclick="active(event,this)" ><a href="">Connect  <i class="nav__opt"></i></a>
+              <ul class="nav__card">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkdln</li>
+              </ul>
+            </li>
           </div>
   
-          <div class="nav__card">
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>Linkdln</li>
-          </div>
           <div class="nav__log">
             <a href=""><li class="button">Login</li></a>
             <a href=""><li class="button-inverted">Sign up</li></a>
@@ -38,15 +51,15 @@
         <ul>
          
         </ul>
-        <div class="nav__burguer">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="nav__burguer" onclick="change(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
       </nav>
       <section class="hero__container">
         <div class="hero__letter">
-          <h1>A modern Publishing platform</h1>
+          <h1>A modern publishing platform</h1>
           <p>Grow your audience and build your online brand</p>
           <div class="hero__log">
             <a href=""><li class="hero__button-inverted">Start for Free</li></a>
@@ -65,6 +78,6 @@
  <!--Final Description-->
 
  <!--Footer-->
-
+<script src="./src/js/header.js"></script>
 </body>
 </html>
