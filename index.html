@@ -4,13 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/header.css">
   <link rel="stylesheet" href="./src/css/presentation.css">
   <title>Frontend Mentor | [Blogr]</title>
 
 </head>
-<body>
- <!--Header-->
+<style>
 
+</style>
+<body>
+   <!--Header-->
+  <header>
+    <div class="header__svg">
+      <nav>
+        <h1 class="nav__logo">Blogr</h1>
+        <ul class="nav__mainbar">
+          <div class="nav__mainnav">
+            <li onclick="active(event,this)" ><a  href="">Product  <i class="nav__opt "></i></a>
+              <ul class="nav__card">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkdln</li>
+              </ul>
+            </li>
+            <li onclick="active(event,this)" ><a href="">Company  <i class="nav__opt"></i></a>
+              <ul class="nav__card">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkdln</li>
+              </ul>
+            </li>
+            <li onclick="active(event,this)" ><a href="">Connect  <i class="nav__opt"></i></a>
+              <ul class="nav__card">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>Linkdln</li>
+              </ul>
+            </li>
+          </div>
+  
+          <div class="nav__log">
+            <a href=""><li class="button">Login</li></a>
+            <a href=""><li class="button-inverted">Sign up</li></a>
+          </div>
+        </ul>
+        
+        <ul>
+         
+        </ul>
+        <div class="nav__burguer" onclick="change(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+      <section class="hero__container">
+        <div class="hero__letter">
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+          <div class="hero__log">
+            <a href=""><li class="hero__button-inverted">Start for Free</li></a>
+            <a href=""><li class="hero__button">Learn More</li></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+<main>
  <!--Initial presentation-->
 <section class="presentation__section">
    <h2 class="presentation__h2">Designed for the future</h2>
@@ -27,18 +88,17 @@
  
   <h3>Robust content <span><br> </span>management</h3>
   <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+  by adding customized categories, sections, format, or flow. With this functionality, youre in full control.
   </p>
 </div>
 </div>
 </section>
 
-
  <!--Center UI-->
 
  <!--Final Description-->
-
+</main>
  <!--Footer-->
-
+<script src="./src/js/header.js"></script>
 </body>
 </html>
