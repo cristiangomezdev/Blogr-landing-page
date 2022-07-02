@@ -1,0 +1,123 @@
+.centerUi__div__svg{
+    margin-top: 60%;
+
+    width: 100%;
+    height: 100vh;
+    border-radius: 0 80px;
+
+    background-image: url("../assets/images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 165%;
+    background-position-x: 50%;
+    background-position-y: -38vh;
+    background-color: var(--bgradient-body-very-dark-gray-blue);
+    
+}
+
+.centerUi__div__svg img{
+    width: 100%;
+    margin-top: -50%;
+}
+
+.centerUi__div__text {
+    color: var(--neutral-white);
+    font-family: Overpass;
+    text-align: center;
+    align-items: center;
+}
+
+.centerUi__div__text h3{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0.5em;
+    word-spacing: 0.15em;
+    line-height: 1em;
+}
+
+.centerUi__div__text p{
+    padding: 0 10%;
+    font-weight: lighter;
+    word-spacing: 0.15em;
+    line-height: 2em;
+}
+
+/*
+@media screen and (min-width:1440px) {}*/
+@media screen and (min-width:1024px) {
+    .centerUi__div__svg{
+        display: flex;
+        margin-top: 0; 
+        height: 12vh;
+        background-size: 75%;
+        background-position-x: -15vw;
+        background-position-y: -14vh;
+        background-color: var(--bgradient-body-very-dark-gray-blue);
+    }
+
+    .centerUi__div__svg img{
+        width: 50%;
+        height: 150%;
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+    .centerUi__div__text{
+        padding-top: 5% ;
+        text-align: left;
+        width: 90%;
+    }
+    .centerUi__div__text h3{
+        font-size: 32px;
+        padding:  5% 0;
+    }
+     .centerUi__div__text h3 span{
+        display: none;
+    }
+    .centerUi__div__text p {
+        padding: 0;
+        width: 90%;
+}
+
+}
+@media screen and (orientation:landscape){
+     .centerUi__div__svg{
+        height: 200vh;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .centerUi__div__svg{
+        display: flex;
+        margin-top: 0; 
+        height: 12vh;
+        background-size: 75%;
+        background-position-x: -15vw;
+        background-position-y: -17vh;
+    }
+
+    .centerUi__div__svg img{
+        width: 50%;
+        height: 150%;
+        margin-top: -5%;
+        margin-left: 10%;
+    }
+
+    .centerUi__div__text{
+        padding-top: 5%;
+        text-align: left;
+        width: 80%;
+    }
+    .centerUi__div__text h3{
+        font-size: 36px;
+        padding:  5%;
+    }
+
+    .centerUi__div__text h3 span{
+        display: none;
+    }
+
+    .centerUi__div__text p {
+        padding: 0 5%;
+        width: 70%;
+}
+
+}
