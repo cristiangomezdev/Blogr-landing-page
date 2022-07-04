@@ -101,10 +101,12 @@ main{
 
 .presentation__div__text{
     text-align:center ;
-    grid-column: 2 ;
+    grid-column: 1 ;
     grid-row: 1
 }
-
+.presentation__div__text__inverted{
+    grid-column: 2;
+}
 .presentation__div__text h3 span {
     display: none;
 }

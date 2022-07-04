@@ -204,14 +204,14 @@ display:block;
 
 .hero__button-inverted {
     margin: 0 auto;
-    width: 100px !important;
+    width: 110px !important;
     color: var( --bgradient-nav-light-red);
     background-color: white;
     border-radius: 30px;
     /* Green */
     font-family: 'Overpass';
     font-weight: 700;
-    padding: 12px 14px;
+    padding: 12px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
