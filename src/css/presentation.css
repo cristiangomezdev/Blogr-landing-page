@@ -6,7 +6,7 @@ main{
 }
 
 .presentation__section{
-    margin: 10em 0;
+/*     margin: 10em 0; */
     text-align: center; 
     font-family: Overpass;
     color: var(--prymary-very-dark-blue);
@@ -29,6 +29,17 @@ main{
     width: 100%;
     max-height: 800px;
     height: calc(45vh + (100vw - 320px)* 0.4);
+}
+
+.presentation__div__svg__2{
+    background-image: url("../assets/images/illustration-laptop-mobile.svg");
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    max-width: 480px;
+    width: 100%;
+    max-height: 800px;
+    height: 350px;
 }
 
 .presentation__h2{
@@ -73,7 +84,14 @@ main{
     max-width: none;
     width: 120%;
 }
-
+.presentation__div__svg__2{
+    background-image: url("../assets/images/illustration-laptop-desktop.svg");
+    background-position-x:-10% ;
+    /*   background-position-y:20% ; */
+    max-width: none;
+    width: 120%;
+    height:600px;
+}
 
 .presentation__div__container{
     grid-template-columns:50% 50%;
@@ -86,7 +104,9 @@ main{
     grid-column: 1 ;
     grid-row: 1
 }
-
+.presentation__div__text__inverted{
+    grid-column: 2;
+}
 .presentation__div__text h3 span {
     display: none;
 }
@@ -118,13 +138,18 @@ main{
 }
 
 
-@media screen and(min-width:1280px) {
-    .presentation__section{
+@media screen and (min-width:1280px) {
+/*     .presentation__section{
     overflow:visible;
  }
 
  .presentation__div__svg {
     height: 25vh !important;
     background-position-y: 0%;
+} */
+.presentation__div__svg__2{
+    height:800px;
+    background-size: 90% !important;
+    width:100%;
 }
 }

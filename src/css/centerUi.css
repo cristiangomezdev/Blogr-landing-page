@@ -2,9 +2,9 @@
     margin-top: 60%;
 
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; creo que hay un tema con el vh*/
     border-radius: 0 80px;
-
+    padding-bottom:2em;
     background-image: url("../assets/images/bg-pattern-circles.svg");
     background-repeat: no-repeat;
     background-size: 165%;
@@ -25,7 +25,9 @@
     text-align: center;
     align-items: center;
 }
-
+.centerUi__div__text p{
+    margin-bottom: 50px;
+}
 .centerUi__div__text h3{
     font-size: 32px;
     font-weight: 600;
@@ -47,7 +49,8 @@
     .centerUi__div__svg{
         display: flex;
         margin-top: 0; 
-        height: 12vh;
+       /*  height: 12vh; */
+
         background-size: 75%;
         background-position-x: -15vw;
         background-position-y: -14vh;
@@ -79,16 +82,16 @@
 
 }
 @media screen and (orientation:landscape){
-     .centerUi__div__svg{
-        height: 200vh;
-    }
+/*      .centerUi__div__svg{
+         height: 200vh; 
+    } */
 }
 
 @media screen and (min-width:1440px) {
     .centerUi__div__svg{
         display: flex;
         margin-top: 0; 
-        height: 12vh;
+        /* height: 12vh; */
         background-size: 75%;
         background-position-x: -15vw;
         background-position-y: -17vh;

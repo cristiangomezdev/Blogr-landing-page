@@ -1,0 +1,34 @@
+.footer__container{
+    display:block;
+    text-align: center;
+
+    padding: 50px;
+    background-color: var(--bgradient-body-very-dark-gray-blue);
+}
+.footer__logo{
+    font-size: 35px;
+    font-family: 'Overpass';
+    font-weight: 700;
+    align-items: center;
+    color: white;
+}
+.footer__container ul {
+    margin:2em 0;
+}
+.footer__container ul li{
+    line-height: 30px;
+    color:var(--neutral-white);
+    font-family: Overpass;
+}
+.footer__container ul li:first-child{
+    font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+    .footer__container{
+        display:flex;
+        justify-content: space-around;
+    }
+    .footer__container ul {
+        margin:0;
+    }
+}
