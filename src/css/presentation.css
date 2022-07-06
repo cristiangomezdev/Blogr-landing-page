@@ -6,12 +6,12 @@ main{
 }
 
 .presentation__section{
-/*     margin: 10em 0; */
+    margin: auto;
     text-align: center; 
     font-family: Overpass;
     color: var(--prymary-very-dark-blue);
     overflow: hidden;
-    /*max-width: 1680px;*/
+    max-width: 1680px;
     width: 100%;
 }
 .presentation__div__container{
@@ -27,10 +27,9 @@ main{
     background-repeat: no-repeat;
     max-width: 480px;
     width: 100%;
-    max-height: 800px;
-    height: calc(45vh + (100vw - 320px)* 0.4);
+    max-height: 700px;
+    height: calc(45vh + (100vw - 0px)* 0.4);
 }
-
 .presentation__div__svg__2{
     background-image: url("../assets/images/illustration-laptop-mobile.svg");
     background-position: center;
@@ -41,8 +40,9 @@ main{
     max-height: 800px;
     height: 350px;
 }
-
 .presentation__h2{
+    position: relative;
+    top:60px;
     font-size: 24px;
     font-weight: 600;
     padding: 1.5em;
@@ -66,11 +66,13 @@ main{
     word-spacing: 0.15em;
     line-height: 2em;
 }
-
+.presentation__div__text__inverted{
+margin-bottom: 100px;
+}
 
 @media screen and (min-width:480px) {
     .presentation__div__svg{
-     height: calc(45vh + (100vw - 320px)* 0.25);
+     height: calc(45vh + (50vw - 0px)* 0.25);
  }
 }
 
@@ -79,10 +81,11 @@ main{
 
 .presentation__div__svg{
     background-image: url("../assets/images/illustration-editor-desktop.svg");
-    background-position-x:-10% ;
-      background-position-y:20% ;
+   /*  background-position-x:-10% ; */
+       background-position-y:20% ; 
     max-width: none;
-    width: 120%;
+    width: 110%;
+
 }
 .presentation__div__svg__2{
     background-image: url("../assets/images/illustration-laptop-desktop.svg");
@@ -90,9 +93,12 @@ main{
     /*   background-position-y:20% ; */
     max-width: none;
     width: 120%;
-    height:600px;
+    height: calc(45vh + (50vw - 0px)* 0.4);
 }
-
+.presentation__div__text__inverted{
+    grid-column: 2 !important;
+    padding-right: 5em;
+}
 .presentation__div__container{
     grid-template-columns:50% 50%;
     align-items: center;
@@ -104,9 +110,7 @@ main{
     grid-column: 1 ;
     grid-row: 1
 }
-.presentation__div__text__inverted{
-    grid-column: 2;
-}
+
 .presentation__div__text h3 span {
     display: none;
 }
@@ -116,14 +120,17 @@ main{
 @media screen and (min-width:1024px) {
 
 .presentation__h2{
-    position: absolute;
-    left: 35%;
+    position: relative;
+    top:60px;
+    padding:0;
+
 }
 .presentation__div__svg{
     background-image: url(../assets/images/illustration-editor-desktop.svg);
     background-position-x: 150px;
     max-width: none;
-    width: 150%;
+    max-height: none;
+ /*    width: 150%; */
     margin-left: 10%;
     z-index: 3;
 }
@@ -138,18 +145,23 @@ main{
 }
 
 
-@media screen and (min-width:1280px) {
-/*     .presentation__section{
+@media screen and(min-width:1280px) {
+    .presentation__section{
     overflow:visible;
  }
-
- .presentation__div__svg {
-    height: 25vh !important;
-    background-position-y: 0%;
-} */
-.presentation__div__svg__2{
+ .presentation__div__svg__2{
     height:800px;
     background-size: 90% !important;
     width:100%;
 }
+}
+@media screen and(min-width:1440px) {
+    .presentation__section{
+    display:flex;
+    justify-content: center;
+ }
+    .presentation__div__svg{
+        background-position-x:unset !important;
+        margin-left: unset;
+    }
 }

@@ -1,7 +1,7 @@
 .footer__container{
     display:block;
     text-align: center;
-
+    border-radius: 0 80px 0px 0px;
     padding: 50px;
     background-color: var(--bgradient-body-very-dark-gray-blue);
 }
