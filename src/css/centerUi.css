@@ -2,7 +2,7 @@
     margin-top: 60%;
 
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     border-radius: 0 80px;
     padding-bottom: 2em;
     background-image: url("../assets/images/bg-pattern-circles.svg");
@@ -40,18 +40,13 @@
     word-spacing: 0.15em;
     line-height: 2em;
 }
-@media screen and (min-width:768px) {
-    .centerUi__div__svg{
-        height:70vh;
-    }
-}
-/*
-@media screen and (min-width:1440px) {}*/
+
+
 @media screen and (min-width:1024px) {
     .centerUi__div__svg{
         display: flex;
         margin-top: 0; 
-        height: 40vh;
+        height: 50vh;
         background-size: 75%;
         background-position-x: -15vw;
         background-position-y: -14vh;
@@ -82,17 +77,12 @@
 }
 
 }
-@media screen and (orientation:landscape){
-     .centerUi__div__svg{
-        height: 40vh;
-    }
-}
 
 @media screen and (min-width:1440px) {
     .centerUi__div__svg{
         display: flex;
         margin-top: 0; 
-        height: 40vh;
+        height: 50vh;
         background-size: 75%;
         background-position-x: -15vw;
         background-position-y: -17vh;
