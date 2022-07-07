@@ -31,4 +31,7 @@
     .footer__container ul {
         margin:0;
     }
+        .footer__container ul li:first-child{
+        line-height:60px;
+    }
 }
